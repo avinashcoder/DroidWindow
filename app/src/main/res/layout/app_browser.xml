@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_browser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="droidwindow.rainbow.com.droidwindow.AppBrowser">
+
+
+
+    <WebView
+        android:layout_weight="0.90"
+        android:id="@+id/wv_brow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="3dp"
+            android:layout_y="184dp"
+            android:id="@+id/progressBar"
+            android:layout_weight="0.10" />
+    </WebView>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.10"
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25"
+            android:id="@+id/back"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25"
+            android:id="@+id/forward"
+            android:text="Forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25"
+            android:id="@+id/reload"
+            android:text="Reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.25"
+            android:id="@+id/clear"
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

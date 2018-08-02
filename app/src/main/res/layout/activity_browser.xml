@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_browser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="droidwindow.rainbow.com.droidwindow.Browser">
+
+    <LinearLayout
+        android:id="@+id/ll_urlgo"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_weight="0.10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.98"
+            android:background="@android:color/white"
+            android:maxLines="1"
+            android:hint="Enter URL"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:background="@drawable/search"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv_brow"
+        android:layout_width="match_parent"
+        android:layout_height="492dp"
+        android:layout_weight="0.80">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_x="3dp"
+            android:layout_y="184dp" />
+
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/backarrow"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/reload"
+            android:layout_width="29dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/reload"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/forward"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="29dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/del"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
